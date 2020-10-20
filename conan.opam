@@ -12,7 +12,7 @@ description: """Conan is a re-implementation in OCaml of the file command.
 The library is system-agnostic and can be used with MirageOS."""
 
 build:
-  [ [ "dune" "substr" ] {pinned}
+  [ [ "dune" "subst" ] {pinned}
     [ "dune" "build" "-p" name "-j" jobs ]
     [ "dune" "runtest" "-p" name "-j" jobs ] {with-test} ]
 
